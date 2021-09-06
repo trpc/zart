@@ -1,5 +1,5 @@
 {
-  "name": "@examples/next-starter",
+  "name": "@zart/web",
   "version": "9.2.0",
   "private": true,
   "scripts": {

@@ -1,10 +1,20 @@
 {
   "name": "zart",
+  "private": true,
   "version": "1.0.0",
   "main": "index.js",
   "author": "KATT",
   "license": "MIT",
   "dependencies": {
     "lerna": "^4.0.0"
+  },
+  "workspaces": {
+    "packages": [
+      "packages/*"
+    ],
+    "nohoist": [
+      "**/@prisma",
+      "**/@prisma/**"
+    ]
   }
 }
