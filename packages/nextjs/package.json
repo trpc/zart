@@ -1,5 +1,5 @@
 {
-  "name": "@zart/web",
+  "name": "@zart/nextjs",
   "version": "9.2.0",
   "private": true,
   "scripts": {
