@@ -1,10 +1,3 @@
 {
-  "compilerOptions": {
-    "strict": true,
-    "strictNullChecks": true,
-    "esModuleInterop": true
-  },
-  "paths": {
-    "@api/*": ["packages/api/src*"]
-  }
+  "extends": "./tsconfig.base"
 }

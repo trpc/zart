@@ -3,13 +3,13 @@
  * This is an example router, you can delete this file and then update `../pages/api/trpc/[trpc].tsx`
  */
 
-import { createRouter } from 'server/trpc';
-import { z } from 'zod';
-import { TRPCError } from '@trpc/server';
+import { createRouter } from "../trpc";
+import { z } from "zod";
+import { TRPCError } from "@trpc/server";
 
 export const postRouter = createRouter()
   // create
-  .mutation('add', {
+  .mutation("add", {
     input: z.object({
       id: z.string().uuid().optional(),
       title: z.string().min(1).max(32),
@@ -23,7 +23,7 @@ export const postRouter = createRouter()
     },
   })
   // read
-  .query('all', {
+  .query("all", {
     async resolve({ ctx }) {
       /**
        * For pagination you can have a look at this docs site
@@ -38,7 +38,7 @@ export const postRouter = createRouter()
       });
     },
   })
-  .query('byId', {
+  .query("byId", {
     input: z.string(),
     async resolve({ ctx, input }) {
       const post = await ctx.prisma.post.findUnique({
@@ -46,7 +46,7 @@ export const postRouter = createRouter()
       });
       if (!post) {
         throw new TRPCError({
-          code: 'NOT_FOUND',
+          code: "NOT_FOUND",
           message: `No post with id '${input}'`,
         });
       }
@@ -54,7 +54,7 @@ export const postRouter = createRouter()
     },
   })
   // update
-  .mutation('edit', {
+  .mutation("edit", {
     input: z.object({
       id: z.string().uuid(),
       data: z.object({
@@ -72,7 +72,7 @@ export const postRouter = createRouter()
     },
   })
   // delete
-  .mutation('delete', {
+  .mutation("delete", {
     input: z.string().uuid(),
     async resolve({ input: id, ctx }) {
       await ctx.prisma.post.delete({ where: { id } });

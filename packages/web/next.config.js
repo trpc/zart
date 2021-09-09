@@ -1,4 +1,8 @@
 /**
  * @link https://nextjs.org/docs/api-reference/next.config.js/introduction
  */
-module.exports = {};
+module.exports = {
+  experimental: {
+    externalDir: true,
+  },
+};

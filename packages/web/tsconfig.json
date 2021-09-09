@@ -1,37 +1,26 @@
 {
-  "extends": "../../tsconfig.json",
+  "extends": "../../tsconfig.base",
   "compilerOptions": {
+    "baseUrl": "src",
+    "paths": {
+      "@api/*": ["../../api/src/*"]
+    },
     "target": "es5",
-    "lib": [
-      "dom",
-      "dom.iterable",
-      "esnext"
-    ],
+    "lib": ["dom", "dom.iterable", "esnext"],
     "allowJs": true,
-    "strict": true,
-    "strictNullChecks": true,
     "forceConsistentCasingInFileNames": true,
     "noEmit": true,
-    "esModuleInterop": true,
     "module": "esnext",
     "moduleResolution": "node",
     "resolveJsonModule": true,
     "isolatedModules": true,
-    "jsx": "preserve",
-    "types": [
-      "@types/jest",
-      "jest-playwright-preset",
-      "expect-playwright"
-    ],
-    "baseUrl": "./src",
-    "skipLibCheck": true
+    "jsx": "preserve"
   },
   "include": [
     "next-env.d.ts",
-    "**/*.ts",
-    "**/*.tsx"
+    "../api/src/**/*.ts",
+    "./src/**/*.ts",
+    "./src/**/*.tsx"
   ],
-  "exclude": [
-    "node_modules"
-  ]
+  "exclude": ["node_modules"]
 }

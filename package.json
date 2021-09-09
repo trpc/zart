@@ -6,15 +6,16 @@
   "author": "KATT",
   "license": "MIT",
   "dependencies": {
-    "lerna": "^4.0.0"
+    "@prisma/client": "^2.30.3",
+    "lerna": "^4.0.0",
+    "prisma": "^2.30.3"
+  },
+  "scripts": {
+    "prisma-dev": "prisma migrate dev && prisma generate"
   },
   "workspaces": {
     "packages": [
       "packages/*"
-    ],
-    "nohoist": [
-      "**/@prisma",
-      "**/@prisma/**"
     ]
   }
 }
