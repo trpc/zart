@@ -3,7 +3,9 @@ import { View, Text, StyleSheet } from 'react-native';
 import { trpc } from './trpc';
 
 export function HelloWorld() {
-  const posts = trpc.useQuery(['post.all']);
+  const posts = trpc.useQuery(['post.all'], {
+    refetchInterval: 3000,
+  });
   return (
     <View style={styles.container}>
       <Text>{posts.status}</Text>
@@ -18,6 +20,6 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     justifyContent: 'center',
-    alignItems: 'center'
-  }
+    alignItems: 'center',
+  },
 });

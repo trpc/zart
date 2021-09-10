@@ -2,22 +2,33 @@
   "name": "zart",
   "private": true,
   "version": "0.0.1",
-  "main": "index.js",
   "author": "KATT",
   "license": "MIT",
-  "dependencies": {
-    "@prisma/client": "^2.30.3",
-    "lerna": "^4.0.0",
-    "prisma": "^2.30.3",
-    "expo-yarn-workspaces": "^1.5.1"
-  },
   "scripts": {
-    "prisma-dev": "prisma migrate dev && prisma generate"
+    "dev:nextjs": "cd apps/nextjs && yarn dev",
+    "dev:expo": "cd apps/expo && yarn start:expo",
+    "dev": "run-p dev:* --print-label",
+    "clean": "find . -name node_modules -o -name .next -o -name .expo -type d -prune | xargs rm -rf",
+    "prisma-dev": "prisma migrate dev && prisma generate",
+    "manypkg-fix": "manypkg fix"
   },
   "workspaces": {
     "packages": [
       "packages/*",
       "apps/*"
     ]
+  },
+  "prettier": {
+    "printWidth": 80,
+    "trailingComma": "all",
+    "singleQuote": true
+  },
+  "dependencies": {
+    "@manypkg/cli": "^0.18.0",
+    "@prisma/client": "^2.30.3",
+    "expo-yarn-workspaces": "^1.5.1",
+    "npm-run-all": "^4.1.5",
+    "lerna": "^4.0.0",
+    "prisma": "^2.30.3"
   }
 }
