@@ -2,6 +2,7 @@
 
 > **Z**ero-**A**PI, **R**eact, & **T**ypeScript
 
+**⚡️ Probably the fastest way to build a React Native app with your own backend ⚡️**
 
 ## Introduction
 
