@@ -1,4 +1,4 @@
-# ZART-Stack 🤯
+# zART-Stack 🤯
 
 > **Z**ero-**A**PI, **R**eact, & **T**ypeScript
 
