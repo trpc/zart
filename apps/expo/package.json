@@ -16,7 +16,7 @@
     "expo:prebuild": "expo prebuild --skip-dependency-update react",
     "run:ios": "yarn expo:prebuild && expo run:ios",
     "run:android": "yarn expo:prebuild && expo run:android",
-    "postinstall": "expo-yarn-workspaces postinstall && cd ../.. && npx patch-package",
+    "postinstall": "expo-yarn-workspaces postinstall && cd ../..",
     "publish:development": "STAGE=development expo publish",
     "publish:staging": "STAGE=staging expo publish --release-channel=staging",
     "publish:production": "STAGE=production expo publish --release-channel=production",
