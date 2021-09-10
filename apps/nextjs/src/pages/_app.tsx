@@ -3,7 +3,7 @@ import { loggerLink } from '@trpc/client/links/loggerLink';
 import { withTRPC } from '@trpc/next';
 import { AppType } from 'next/dist/shared/lib/utils';
 import type { AppRouter } from '@zart/api/src/routers/_app';
-import superjson from 'superjson';
+import { transformer } from 'utils/trpc';
 
 const MyApp: AppType = ({ Component, pageProps }) => {
   return (
@@ -56,11 +56,11 @@ export default withTRPC<AppRouter>({
       /**
        * @link https://trpc.io/docs/data-transformers
        */
-      transformer: superjson,
+      transformer,
       /**
        * @link https://react-query.tanstack.com/reference/QueryClient
        */
-      queryClientConfig: { defaultOptions: { queries: { staleTime: 60 } } },
+      // queryClientConfig: { defaultOptions: { queries: { staleTime: 6000 } } },
     };
   },
   /**

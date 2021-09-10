@@ -1,6 +1,6 @@
 import React from 'react';
 import { View, Text, StyleSheet } from 'react-native';
-import { trpc } from './trpc';
+import { trpc } from '@zart/react/trpc';
 
 export function HelloWorld() {
   const posts = trpc.useQuery(['post.all'], {

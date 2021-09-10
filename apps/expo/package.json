@@ -11,6 +11,7 @@
     "start:ios": "expo --ios",
     "android": "react-native run-android",
     "ios": "react-native run-ios",
+    "dev": "start:expo",
     "eject": "expo eject",
     "expo:prebuild": "expo prebuild --skip-dependency-update react",
     "run:ios": "yarn expo:prebuild && expo run:ios",
