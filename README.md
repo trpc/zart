@@ -1,16 +1,15 @@
 # ZART-Stack 🤯
 
-**Z**ero-**A**PI, **R**eact, & **T**ypeScript
+> **Z**ero-**A**PI, **R**eact, & **T**ypeScript
 
 
 ## Introduction
 
 A monorepo with a Next.js example + Expo app that are using the same [tRPC](https://trpc.io)-API.
 
-In tRPC you simply write API-functions that are automatically inferred straight into your frontend, whether it's React, React Native, or something else [JS-based].
+In tRPC you simply write API-functions that are automatically inferred straight into your frontend - no matter if it's React, React Native, or something else _(that is TS/JS-based)_.
 
 ## Getting started
-
 
 ```bash
 git clone git@github.com:KATT/zart.git
@@ -19,7 +18,19 @@ yarn
 yarn dev
 ```
 
-Now - head over to one of the `[apps](./apps), whilist updating [a router in tRPC](./packages/api/src/routers), see that the data is directly inferred.
+> Press `i` after `yarn dev` in to launch the iOS Simulator.
+
+Now - head over to one of the [`./apps`](./apps), whilist updating [a router in tRPC](./packages/api/src/routers) or the [Database Schema](./prisma/schema.prisma) and see that the data is directly inferred.
+
+## Available commands
+
+| Command               | Description                                                                                    |
+| --------------------- | ---------------------------------------------------------------------------------------------- |
+| `yarn dev`            | Starts Postgres, Expo & Next.js                                                                |
+| `yarn db-up`          | Starts Postgres on port `5466`                                                                 |
+| `yarn db-migrate-dev` | Runs the latest Database migrations after updating the [Prisma schema](./prisma/schema.prisma) |
+| `yarn db-nuke`        | Kills the database                                                                             |
+
 
 ## Folder structure
 
