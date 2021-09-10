@@ -47,6 +47,17 @@ Now - head over to one of the [`./apps`](./apps), whilist updating [a router in 
 └── prisma      # Prisma setup
 ```
 
+## Further reading
+
+### Deployment
+
+- Create a Postgres Database
+- Set env `DATABASE_URL` pointing towards that db
+
+### Questions?
+
+Shoot me a message [on Twitter](https://twitter.com/alexdotjs)!
+
 
 ## Credits
 
