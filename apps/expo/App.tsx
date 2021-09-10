@@ -1,5 +1,5 @@
-import { HelloWorld } from '@zart/react/hello-world';
-import { theme } from '@zart/react/theme';
+import { HelloWorld } from '@zart/react-native/hello-world';
+import { theme } from '@zart/react-native/theme';
 import { DripsyProvider } from 'dripsy';
 import Constants from 'expo-constants';
 import { StatusBar } from 'expo-status-bar';
