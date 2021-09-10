@@ -9,6 +9,13 @@ A monorepo with a Next.js example + Expo app that are using the same [tRPC](http
 
 In tRPC you simply write API-functions that are automatically inferred straight into your frontend - no matter if it's React, React Native, or something else _(that is TS/JS-based)_.
 
+### Video
+
+> Very rough video recorded in 2 minutes 😅
+
+[![ZART](http://img.youtube.com/vi/dLLm6hgMhMQ/0.jpg)](http://www.youtube.com/watch?v=dLLm6hgMhMQ "Video Title")
+
+
 ## Getting started
 
 ```bash
