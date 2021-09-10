@@ -5,7 +5,11 @@
 
 ## Introduction
 
-A monorepo with a Next.js example + Expo app that are using the same [tRPC](https://trpc.io)-API.
+A monorepo containing:
+
+- Next.js web app
+- React Native app with Expo
+- A [tRPC](https://trpc.io)-API that is inferred straight into the above.
 
 In tRPC you simply write API-functions that are automatically inferred straight into your frontend - no matter if it's React, React Native, or something else _(that is TS/JS-based)_.
 
