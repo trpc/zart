@@ -2,9 +2,6 @@
   "extends": "../../tsconfig.base",
   "compilerOptions": {
     "baseUrl": "src",
-    "paths": {
-      "@api/*": ["../../api/src/*"]
-    },
     "target": "es5",
     "lib": ["dom", "dom.iterable", "esnext"],
     "allowJs": true,
@@ -16,11 +13,6 @@
     "isolatedModules": true,
     "jsx": "preserve"
   },
-  "include": [
-    "next-env.d.ts",
-    "../api/src/**/*.ts",
-    "./src/**/*.ts",
-    "./src/**/*.tsx"
-  ],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],
   "exclude": ["node_modules"]
 }

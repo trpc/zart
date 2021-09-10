@@ -3,7 +3,7 @@
  * This is an example router, you can delete this file and then update `../pages/api/trpc/[trpc].tsx`
  */
 
-import { createRouter } from "../trpc";
+import { createRouter } from "../createRouter";
 import { z } from "zod";
 import { TRPCError } from "@trpc/server";
 

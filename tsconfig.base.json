@@ -1,6 +1,5 @@
 {
   "compilerOptions": {
-    "baseUrl": "packages",
     "strict": true,
     "strictNullChecks": true,
     "esModuleInterop": true,
@@ -9,9 +8,6 @@
     "noUnusedLocals": true,
     "skipLibCheck": true,
     "sourceMap": true,
-    "jsx": "react",
-    "paths": {
-      "@api/*": ["api/src/*"]
-    }
+    "jsx": "react"
   }
 }

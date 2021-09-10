@@ -2,8 +2,8 @@
  * This file contains tRPC's HTTP response handler
  */
 import * as trpcNext from '@trpc/server/adapters/next';
-import { appRouter } from '@api/routers/app';
-import { createContext } from '@api/trpc';
+import { appRouter } from '@zart/api/src/routers/_app';
+import { createContext } from '@zart/api/src/createContext';
 
 export default trpcNext.createNextApiHandler({
   router: appRouter,

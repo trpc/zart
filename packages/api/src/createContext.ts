@@ -8,6 +8,7 @@ const prisma = new PrismaClient({
       ? ["query", "error", "warn"]
       : ["error"],
 });
+
 /**
  * Creates context for an incoming request
  * @link https://trpc.io/docs/context
@@ -17,7 +18,6 @@ export const createContext = async ({
   res,
 }: trpcNext.CreateNextContextOptions) => {
   // for API-response caching see https://trpc.io/docs/caching
-
   return {
     req,
     res,
@@ -26,10 +26,3 @@ export const createContext = async ({
 };
 
 export type Context = trpc.inferAsyncReturnType<typeof createContext>;
-
-/**
- * Helper function to create a router with context
- */
-export function createRouter() {
-  return trpc.router<Context>();
-}

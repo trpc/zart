@@ -1,21 +1,23 @@
 {
   "name": "zart",
   "private": true,
-  "version": "1.0.0",
+  "version": "0.0.1",
   "main": "index.js",
   "author": "KATT",
   "license": "MIT",
   "dependencies": {
     "@prisma/client": "^2.30.3",
     "lerna": "^4.0.0",
-    "prisma": "^2.30.3"
+    "prisma": "^2.30.3",
+    "expo-yarn-workspaces": "^1.5.1"
   },
   "scripts": {
     "prisma-dev": "prisma migrate dev && prisma generate"
   },
   "workspaces": {
     "packages": [
-      "packages/*"
+      "packages/*",
+      "apps/*"
     ]
   }
 }
