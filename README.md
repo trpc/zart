@@ -7,7 +7,7 @@
 
 A monorepo with a Next.js example + Expo app that are using the same [tRPC](https://trpc.io)-API.
 
-Update your the [API](/packages/api) and see the types inferred straight into your React Native App.
+In tRPC you simply write API-functions that are automatically inferred straight into your frontend, whether it's React, React Native, or something else [JS-based].
 
 ## Getting started
 
@@ -18,6 +18,8 @@ cd zart
 yarn
 yarn dev
 ```
+
+Now - head over to one of the `[apps](./apps), whilist updating [a router in tRPC](./packages/api/src/routers), see that the data is directly inferred.
 
 ## Folder structure
 

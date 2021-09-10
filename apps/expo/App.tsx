@@ -1,18 +1,17 @@
-import React, { useState } from "react";
-import { enableScreens } from "react-native-screens";
-import { StatusBar } from "expo-status-bar";
-import { SafeAreaProvider } from "react-native-safe-area-context";
-import { DripsyProvider } from "dripsy";
-import { theme } from "@zart/react/theme";
-import { HelloWorld } from "@zart/react/hello-world";
-import { QueryClient, QueryClientProvider } from "react-query";
+import { HelloWorld } from '@zart/react/hello-world';
+import { theme } from '@zart/react/theme';
+import { DripsyProvider } from 'dripsy';
+import Constants from 'expo-constants';
+import { StatusBar } from 'expo-status-bar';
+import React, { useState } from 'react';
+import { SafeAreaProvider } from 'react-native-safe-area-context';
+import { enableScreens } from 'react-native-screens';
+import { QueryClient, QueryClientProvider } from 'react-query';
+import { transformer, trpc } from './utils/trpc';
 enableScreens(true);
-import Constants from "expo-constants";
-import superjson from "superjson";
-import { transformer, trpc } from "./utils/trpc";
 const { manifest } = Constants;
 
-const localhost = `http://${manifest.debuggerHost?.split(":").shift()}:3000`;
+const localhost = `http://${manifest.debuggerHost?.split(':').shift()}:3000`;
 
 export default function App() {
   const [queryClient] = useState(() => new QueryClient());
@@ -31,7 +30,7 @@ export default function App() {
       <QueryClientProvider client={queryClient}>
         <DripsyProvider theme={theme}>
           <SafeAreaProvider>
-            <StatusBar style='dark' />
+            <StatusBar style="dark" />
             <HelloWorld />
           </SafeAreaProvider>
         </DripsyProvider>
