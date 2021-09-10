@@ -38,5 +38,5 @@ yarn dev
 ## Credits
 
 - tRPC and this example is made by [@alexdotjs](https://twitter.com/alexdotjs)
-- `apps/expo` is basically a copy-paste from [/axeldelafosse/expo-next-monorepo-example](https://github.com/axeldelafosse/expo-next-monorepo-example) @axeldelafosse.
+- `apps/expo` is basically a copy-paste from [`expo-next-monorepo-example`](https://github.com/axeldelafosse/expo-next-monorepo-example) [axeldelafosse](https://github.com/axeldelafosse).
 
