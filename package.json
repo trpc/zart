@@ -14,7 +14,7 @@
     "dev": "run-s db-up db-migrate-dev && run-p dev:* --print-label",
     "clean": "find . -name node_modules -o -name .next -o -name .expo -type d -prune | xargs rm -rf",
     "prisma-dev": "prisma migrate dev && prisma generate",
-    "postinstall": "prisma generate && prisma migrate deploy"
+    "postinstall": "prisma generate"
   },
   "workspaces": {
     "packages": [
