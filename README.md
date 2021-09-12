@@ -41,7 +41,7 @@ Now - head over to one of the [`./apps`](./apps), whilist updating [a router in 
 | `yarn dev`            | Starts Postgres, Expo & Next.js                                                                |
 | `yarn db-up`          | Starts Postgres on port `5466`                                                                 |
 | `yarn db-migrate-dev` | Runs the latest Database migrations after updating the [Prisma schema](./prisma/schema.prisma) |
-| `yarn db-nuke`        | Kills the database                                                                             |
+| `yarn db-nuke`        | Stops and deletes the the database                                                             |
 
 
 ## Folder structure
