@@ -18,14 +18,14 @@
     "react/prop-types": "off",
     "@typescript-eslint/no-explicit-any": "off"
   },
-  // "overrides": [
-  //   {
-  //     "files": [],
-  //     "rules": {
-  // "@typescript-eslint/no-unused-vars": "off"
-  //     }
-  //   }
-  // ],
+  "overrides": [
+    {
+      "files": ["examples/**/*"],
+      "rules": {
+        "@typescript-eslint/no-unused-vars": "off"
+      }
+    }
+  ],
   "settings": {
     "react": {
       "version": "detect"

@@ -4,18 +4,18 @@ const envConfig = {
   development: {
     scheme: 'com.example.development',
     icon: './assets/icon.development.png',
-    backgroundColor: '#FF0000'
+    backgroundColor: '#FF0000',
   },
   staging: {
     scheme: 'com.example.staging',
     icon: './assets/icon.staging.png',
-    backgroundColor: '#8000FF'
+    backgroundColor: '#8000FF',
   },
   production: {
     scheme: 'com.example',
     icon: './assets/icon.png',
-    backgroundColor: '#1610FF'
-  }
+    backgroundColor: '#1610FF',
+  },
 };
 
 const config = envConfig[STAGE || 'development'];
@@ -32,40 +32,40 @@ export default {
   splash: {
     image: './assets/splash.png',
     resizeMode: 'contain',
-    backgroundColor: '#000000'
+    backgroundColor: '#000000',
   },
   ios: {
     bundleIdentifier: config.scheme,
-    supportsTablet: true
+    supportsTablet: true,
   },
   android: {
     package: config.scheme,
     versionCode: 1,
     adaptiveIcon: {
       foregroundImage: './assets/adaptive-icon.png',
-      backgroundColor: config.backgroundColor
+      backgroundColor: config.backgroundColor,
     },
-    jsEngine: 'hermes'
+    jsEngine: 'hermes',
   },
   androidNavigationBar: {
     barStyle: 'dark-content',
-    backgroundColor: '#FFFFFF'
+    backgroundColor: '#FFFFFF',
   },
   assetBundlePatterns: ['**/*'],
   orientation: 'portrait',
   updates: {
-    fallbackToCacheTimeout: 0
+    fallbackToCacheTimeout: 0,
   },
   hooks: {
     postPublish: [
       {
         file: 'sentry-expo/upload-sourcemaps',
-        config: {}
-      }
-    ]
+        config: {},
+      },
+    ],
   },
   extra: {
-    STAGE: process.env.STAGE
+    STAGE: process.env.STAGE,
   },
-  plugins: ['sentry-expo']
+  plugins: ['sentry-expo'],
 };
