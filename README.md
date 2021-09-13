@@ -10,9 +10,10 @@ A monorepo containing:
 
 - Next.js web app
 - React Native app with Expo
-- A [tRPC](https://trpc.io)-API that is inferred straight into the above.
+- A [tRPC](https://trpc.io)-API which is inferred straight into the above.
+- [Prisma](http://prisma.io/) as a typesafe ORM
 
-In tRPC you simply write API-functions that are automatically inferred straight into your frontend - no matter if it's React, React Native, or something else _(that is TS/JS-based)_.
+> In tRPC you simply write API-functions that are automatically inferred straight into your frontend - no matter if it's React, React Native, or something else _(that is TS/JS-based)_.
 
 ### Video
 
@@ -63,8 +64,11 @@ Now - head over to one of the [`./apps`](./apps), whilist updating [a router in 
 
 ### Deployment
 
+#### Vercel
+
 - Create a Postgres Database
 - Set env `DATABASE_URL` pointing towards that db
+
 
 ### Questions?
 
