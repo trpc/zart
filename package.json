@@ -5,8 +5,8 @@
   "author": "KATT",
   "license": "MIT",
   "scripts": {
-    "db-up": "docker-compose up -d",
-    "db-nuke": "docker-compose down --volumes --remove-orphans",
+    "db-up": "docker compose up -d",
+    "db-nuke": "docker compose down --volumes --remove-orphans",
     "db-migrate-dev": "yarn prisma migrate dev",
     "dev:nextjs": "yarn --cwd apps/nextjs dev",
     "dev:expo": "yarn --cwd apps/expo dev",
