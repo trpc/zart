@@ -21,6 +21,10 @@ A monorepo containing:
 
 [![ZART](http://img.youtube.com/vi/dLLm6hgMhMQ/0.jpg)](http://www.youtube.com/watch?v=dLLm6hgMhMQ "Video Title")
 
+## Requirements
+
+You will need docker compose to run the postgres database.
+It comes with the [Docker Desktop App](https://docs.docker.com/get-docker/)
 
 ## Getting started
 
