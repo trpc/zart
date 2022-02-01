@@ -14,15 +14,18 @@
     "studio": "prisma studio",
     "test-dev": "start-server-and-test dev 3000 test",
     "test-start": "start-server-and-test start 3000 test",
-    "test": "jest"
+    "test": "jest",
+    "postinstall": "prisma generate"
   },
   "dependencies": {
+    "@prisma/client": "^3.8.1",
     "@trpc/client": "^9.6.0",
     "@trpc/next": "^9.2.0",
     "@trpc/react": "^9.6.0",
     "@trpc/server": "^9.6.0",
     "clsx": "^1.1.1",
     "next": "^12.0.1",
+    "prisma": "^3.8.1",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-query": "^3.23.2",

@@ -30,7 +30,7 @@
   },
   "dependencies": {
     "@manypkg/cli": "^0.18.0",
-    "@prisma/client": "^3.8.0",
+    "@prisma/client": "^3.8.1",
     "@typescript-eslint/eslint-plugin": "^4.30.0",
     "@typescript-eslint/parser": "^4.31.0",
     "eslint": "^7.32.0",
