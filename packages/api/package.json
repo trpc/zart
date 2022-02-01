@@ -8,9 +8,6 @@
     "src"
   ],
   "scripts": {},
-  "dependencies": {
-    "@prisma/client": "^2.30.3",
-    "@trpc/server": "^9.6.0"
-  },
+  "dependencies": {},
   "devDependencies": {}
 }
