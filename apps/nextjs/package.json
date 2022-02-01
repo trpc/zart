@@ -3,6 +3,7 @@
   "version": "0.0.1",
   "private": true,
   "scripts": {
+    "predev": "prisma generate",
     "dev": "next dev",
     "migrate-dev": "prisma migrate dev",
     "migrate": "prisma migrate deploy",
@@ -14,8 +15,7 @@
     "studio": "prisma studio",
     "test-dev": "start-server-and-test dev 3000 test",
     "test-start": "start-server-and-test start 3000 test",
-    "test": "jest",
-    "postinstall": "prisma generate"
+    "test": "jest"
   },
   "dependencies": {
     "@prisma/client": "^3.8.1",

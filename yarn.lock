@@ -3234,7 +3234,7 @@
   dependencies:
     "@octokit/openapi-types" "^10.1.0"
 
-"@prisma/client@^3.8.0", "@prisma/client@^3.8.1":
+"@prisma/client@^3.8.1":
   version "3.8.1"
   resolved "https://registry.npmjs.org/@prisma/client/-/client-3.8.1.tgz#c11eda8e84760867552ffde4de7b48fb2cf1e1c0"
   integrity sha512-NxD1Xbkx1eT1mxSwo1RwZe665mqBETs0VxohuwNfFIxMqcp0g6d4TgugPxwZ4Jb4e5wCu8mQ9quMedhNWIWcZQ==
