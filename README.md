@@ -72,7 +72,7 @@ Now - head over to one of the [`./apps`](./apps), whilist updating [a router in 
 
 - Create a Postgres Database
 - Set env `DATABASE_URL` pointing towards that db
-- Configure *"Root Directory"* as `apps/nextjs` and tick _Include source files outside of the Root Directory in the Build Step._
+- Configure *"Root Directory"* as `apps/nextjs` and tick _Include source files outside of the Root Directory in the Build Step_.
 
 
 ### Questions?
