@@ -4,8 +4,5 @@
   "private": true,
   "scripts": {},
   "license": "MIT",
-  "dependencies": {
-    "@trpc/react": "^9.6.0",
-    "@trpc/server": "^9.6.0"
-  }
+  "dependencies": {}
 }
