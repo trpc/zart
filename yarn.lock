@@ -3690,38 +3690,32 @@
   resolved "https://registry.npmjs.org/@tootallnate/once/-/once-1.1.2.tgz#ccb91445360179a04e7fe6aff78c00ffc1eeaf82"
   integrity sha512-RbzJvlNzmRq5c3O09UipeuXno4tA1FE6ikOjxZK0tuxVv3412l64l5t1W5pj4+rJq9vpkm/kwiR07aZXnsKPxw==
 
-"@trpc/client@^9.6.0":
-  version "9.6.0"
-  resolved "https://registry.npmjs.org/@trpc/client/-/client-9.6.0.tgz#49457f9b67fc226c360b6d52afc0d47398b0c2a4"
-  integrity sha512-n5YGqEwlkx9l2BPq4D35OPYimso9p+D+/fPWlG/VdVIb1BE8nl1UC49pyQSAF1eD9mXsUnhGuZ8en0/wG78FwQ==
+"@trpc/client@^10.0.0-alpha.36":
+  version "10.0.0-alpha.36"
+  resolved "https://registry.yarnpkg.com/@trpc/client/-/client-10.0.0-alpha.36.tgz#781440583ebc1f7a4d77b0799898459c0cb5e379"
+  integrity sha512-mE2Ye5B+7ylk8/XJApEjpeWZivkiR5Hq6+/KJClFYPsxoZY2QgKwYYO2H2AIjnU5ZOCxqawoljWw1SiwtuCBdw==
   dependencies:
     "@babel/runtime" "^7.9.0"
-    "@trpc/server" "^9.6.0"
 
-"@trpc/next@^9.2.0":
-  version "9.6.0"
-  resolved "https://registry.npmjs.org/@trpc/next/-/next-9.6.0.tgz#5372643358d94a6a9d1c9d71b26084c55de8e28d"
-  integrity sha512-s9WvRgEo1YzJdtKlWXuUVA9o5dUtCAwps3CXVX1PN/KqRzMQkSSwNbeHj+lzwfDOZ/pAiuyvmROXujR5cXR2Ww==
+"@trpc/next@^10.0.0-alpha.36":
+  version "10.0.0-alpha.36"
+  resolved "https://registry.yarnpkg.com/@trpc/next/-/next-10.0.0-alpha.36.tgz#dada5dceebb2266b927fb9f2c8d9dd2103014224"
+  integrity sha512-MqNpxwfnxHg9YNKLA7nm4Kr7j80CDXwbKg5aMjKRMwxn11tT1z3O9qdMFO1nT+A3dFAK/Xexs8K7MwG8KOh5rA==
   dependencies:
     "@babel/runtime" "^7.9.0"
-    "@trpc/client" "^9.6.0"
-    "@trpc/react" "^9.6.0"
-    "@trpc/server" "^9.6.0"
-    react-ssr-prepass "^1.4.0"
+    react-ssr-prepass "^1.5.0"
 
-"@trpc/react@^9.6.0":
-  version "9.6.0"
-  resolved "https://registry.npmjs.org/@trpc/react/-/react-9.6.0.tgz#edd82c4d6a8474fd9c49cd44bca4976fa1293be4"
-  integrity sha512-YHSgmh1Bq4i6Zn+27Kmow78jg5nNwIadWLGGKS87SbNHOwtthUjVa3H+5EelZQBeEHvb2tcFXFXb55EgXMJvyA==
+"@trpc/react@^10.0.0-alpha.36":
+  version "10.0.0-alpha.36"
+  resolved "https://registry.yarnpkg.com/@trpc/react/-/react-10.0.0-alpha.36.tgz#1d1748aeb932ad9ddef32eca5cf50283171ecdf8"
+  integrity sha512-NyGlHhEVtWuQ4rVzpO7DjPlN06pN+sb1Yxeyx68QPrYHmDq+1J/VfWfhold/xi2solt/aT/EF5ldHY+w7KMn7Q==
   dependencies:
     "@babel/runtime" "^7.9.0"
-    "@trpc/client" "^9.6.0"
-    "@trpc/server" "^9.6.0"
 
-"@trpc/server@^9.6.0":
-  version "9.6.0"
-  resolved "https://registry.npmjs.org/@trpc/server/-/server-9.6.0.tgz#89cd2360333378a4d3594b911d743c00fb621b68"
-  integrity sha512-+AOVJPjdej9pTiUtWPg8L5UfagwGa8ceJKd7TtxAVEBA+dZAdoglchZVRdbIrvyeKX81Xrb5Ky8CopMZGeQCZw==
+"@trpc/server@^10.0.0-alpha.36":
+  version "10.0.0-alpha.36"
+  resolved "https://registry.yarnpkg.com/@trpc/server/-/server-10.0.0-alpha.36.tgz#84db6556400fd464dc98e4ec7398781f89445cfe"
+  integrity sha512-TsgU/NMqY1I4Eg8MuzvfO0gKSpmsjB3DHKTrTlStUEheUFNhFP150ocRaRJykW77aSaNOH81sXZ7dImKyn0fZg==
   dependencies:
     tslib "^2.1.0"
 
@@ -15485,10 +15479,10 @@ react-server-dom-webpack@0.0.0-experimental-3c4c1c470-20211021:
     neo-async "^2.6.1"
     object-assign "^4.1.1"
 
-react-ssr-prepass@^1.4.0:
-  version "1.4.0"
-  resolved "https://registry.npmjs.org/react-ssr-prepass/-/react-ssr-prepass-1.4.0.tgz#33a3db19414f0f8f9f3f781c88f760ae366b4f51"
-  integrity sha512-0SzdmiQUtHvhxCabHg9BI/pkJfijGkQ0jQL6fC4YFy7idaDOuaiQLsajIkkNxffFXtJFHIWFITlve2WB88e0Jw==
+react-ssr-prepass@^1.5.0:
+  version "1.5.0"
+  resolved "https://registry.yarnpkg.com/react-ssr-prepass/-/react-ssr-prepass-1.5.0.tgz#bc4ca7fcb52365e6aea11cc254a3d1bdcbd030c5"
+  integrity sha512-yFNHrlVEReVYKsLI5lF05tZoHveA5pGzjFbFJY/3pOqqjGOmMmqx83N4hIjN2n6E1AOa+eQEUxs3CgRnPmT0RQ==
 
 react@^17.0.2:
   version "17.0.2"
