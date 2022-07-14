@@ -5,11 +5,9 @@ import { trpc } from '../utils/trpc';
 
 export default function IndexPage() {
   const utils = trpc.useContext();
-  const postsQuery = trpc.useQuery(['post.all']);
-  const addPost = trpc.useMutation('post.add', {
-    onSettled() {
-      return utils.invalidateQuery(['post.all']);
-    },
+  const postsQuery = trpc.proxy.post.all.useQuery();
+  const addPost = trpc.proxy.post.add.useMutation({
+    onSuccess: () => utils.invalidateQueries('post.all'),
   });
 
   // prefetch all posts for instant navigation
