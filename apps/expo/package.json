@@ -1,6 +1,6 @@
 {
   "main": "index.js",
-  "name": "@expo-next-monorepo-example/expo",
+  "name": "@zart/expo",
   "scripts": {
     "start": "react-native start",
     "start:expo": "expo start",
