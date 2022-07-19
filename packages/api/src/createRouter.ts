@@ -7,8 +7,8 @@ import { Context } from './createContext';
  */
 export const t = trpc.initTRPC<{ ctx: Context }>()({
   /**
-   * Optionally do custom error (type safe!) formatting
-   * @link https://trpc.io/docs/error-formatting
+   * Add data transformers
+   * @link https://trpc.io/docs/data-transformers
    */
   transformer: superjson,
   /**
