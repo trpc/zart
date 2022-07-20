@@ -1,1 +1,1 @@
-export * from '@zart/react/trpc';
+export * from '@zart/react-native/trpc';
