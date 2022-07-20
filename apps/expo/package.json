@@ -1,6 +1,6 @@
 {
   "main": "index.js",
-  "name": "@expo-next-monorepo-example/expo",
+  "name": "@zart/expo",
   "scripts": {
     "start": "react-native start",
     "start:expo": "expo start",
@@ -33,8 +33,8 @@
   "dependencies": {
     "@gorhom/bottom-sheet": "^4.0.0-alpha.30",
     "@sentry/react-native": "^2.6.2",
-    "@trpc/client": "^9.6.0",
-    "@trpc/react": "^9.6.0",
+    "@trpc/client": "^10.0.0-alpha.36",
+    "@trpc/react": "^10.0.0-alpha.36",
     "app": "*",
     "dripsy": "^2.3.6",
     "expo": "^42.0.0-beta.1",

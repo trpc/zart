@@ -1,0 +1,31 @@
+{
+  "$schema": "https://turborepo.org/schema.json",
+  "baseBranch": "origin/main",
+  "pipeline": {
+    "build": {
+      "dependsOn": ["^build"],
+      "outputs": ["dist/**", ".next/**"]
+    },
+    "lint": {
+      "outputs": []
+    },
+    "dev": {
+      "dependsOn": ["//#db-migrate-dev"],
+      "cache": false
+    },
+    "clean": {
+      "outputs": []
+    },
+    "//#db-up": {
+      "cache": false,
+      "inputs": [],
+      "outputs": []
+    },
+    "//#db-migrate-dev": {
+      "dependsOn": ["db-up"],
+      "cache": false,
+      "inputs": [],
+      "outputs": []
+    }
+  }
+}
